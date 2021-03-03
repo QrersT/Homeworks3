@@ -8,17 +8,20 @@
     
 }
 .gravity{
-    background-color: grey;
+    margin-top: 59px;
+    
     grid-column-start: 2;
 }
 .search{
+    margin-top: 59px;
     justify-self: center;
-    background-color: green;
+    
     grid-column-start: 3;
 }
 .menu__icon{
+    margin-top: 59px;
     justify-self: end;
-    background-color: red;
+    
     grid-column-start: 4;
     
 }
@@ -39,23 +42,62 @@
     line-height: 70px;
 
 }
+.twitter{
+    display: inline-flex;
+}
 .social{
     background-color: red;
     margin-top: 125px;
-    grid-column-start: 3;
-    align-items: end;
-    display: inline-block;
+    
 }
 .gridplaceholder{
     display: grid;
     grid-template-columns: [nothing] 125px [line1] auto [nothing2] 125px;
 }
-.placeholder{
-    
-    
-    
+.placeholder{ 
+    /* не получилось картинку сделать на всю ширину колонки */
+    margin: 0px auto;
+    width: 1110px;
+    height: 580px;
+    background-size: 100%;
     margin-top: 86px;
     grid-column-start: 2;
+    
+}
+.gridaswe{
+    display: grid;
+    grid-template-columns: [nothing] 125px [line1] auto [nothing2] 125px; ;
+}
+.aswe{
+    /* не могу понять почему в макете шрифт растянут по углам с марджином 125px, а у меня меньше в 2 раза  */
+    grid-column-start: 2;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    opacity: 0.7;
+    
+   
+}
+.images{  
+    /* такая же проблема, в макете везде указано что по бокам отступ в 125 пикселей, но что-то не сходится */
+    display: grid;
+    grid-template-columns: [nothing] 125px [line1] auto [line2] auto [line3] auto [nothing2] 125px;
+}
+.img1{
+    margin-left: 30px;
+    grid-column-start: 2;
+}
+.img2{
+    
+    grid-column-start: 3;
+}
+.img3{
+    grid-column-start: 4;
     
 }
 
